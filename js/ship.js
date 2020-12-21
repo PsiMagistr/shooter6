@@ -39,6 +39,7 @@ class Ship{
     reload(){
         this.healthBar.current = this.healthBar.max;
         this.manaBar.current = this.manaBar.max;
+        this.countOfMeteors = 0;
     }
     move(cw){
         this.x += this.speed;
@@ -62,7 +63,7 @@ class Ship{
 
     }
     shoot() { //4, 555,  35, 555
-        if (this.currentShootDeley == 0) {
+        if (this.currentShootDeley == 0 && this.manaBar.current > 0) {
             for(let position of this.positions){
                 this.bullets.push(new Rocet(this.x + position.x, position.y, 4, "#00FF00", 5, 15));
             }

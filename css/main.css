@@ -1,0 +1,38 @@
+#container{
+    width:600px;
+    padding:10px;
+    border:1px solid red;
+    margin: 0 auto;
+    background: #CCCCCC;
+}
+
+#information{
+    padding:10px;
+    font-size:22px;
+    background:pink;
+    border: 1px solid red;
+    margin-bottom:3px;
+}
+
+#holst{
+    display:block;
+    /*width:600px;
+    height: 600px;*/
+    border:1px solid;
+    /* background-image: url("../images/space.jpg");*/
+}
+
+#control{
+   display:grid;
+    grid-template-columns: 1fr 4fr;
+   background:darkgray;
+    margin-bottom: 3px;
+    padding:5px;
+    border: 1px solid darkblue;
+}
+
+#lbl{
+    color:white;
+    font-size: 20px;
+}
+
